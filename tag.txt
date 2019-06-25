@@ -1,0 +1,148 @@
+<p> </p> Обзац
+
+<h1> </h1> загаловок от h1 до h6
+
+<ol> </ol> Упорядочный список
+<li> </li>
+
+<ul> </ul> не упрадочный список, черный маркер
+<li> </li>
+
+<dl> </dl> Список определений
+<dt> </dt>
+<dd>Описание </dd> Описание
+
+Атрибуты (Конкретные/ общие)
+<p align="center"> </p> Атрибут (выравнивание текста по центру) (общие) ТЕГ Стар сейчас в CSS
+
+<ol start="0"> </ol> Чтобы начинался список с нуля (Конкретные)
+
+<ul type="square"> </ul> Квадратный маркер для списка (Конкретные)
+<ul type="circle"> </ul>круглый маркер с пустотой внутри (Конкретные)
+<h1 id="header"> </h1>Для выделения атрибута 
+
+ Картинка
+<img src="images/alarm.jpg" width="307" height="450" alt="Будильник" align="right" hspace="30" vspace="20">
+<img src="images/alarm.jpg"
+      источник(путь)
+width="307" Ширина
+height="450" Высота
+alt="Будильник" Альтернативный текст
+align="left" Обтикание текста 
+hspace="30" Растояние от картинки горизонтально
+vspace="20" Растояние от картинки вертикально
+
+1)Ссылки относительные 
+ <a href="http://www.howtocorp.com/typepilot"" target="_blank" title="Подсказка"> </a> (обсалютная ссылка)
+<a> </a> создаем ссылку 
+href="" куда введет эта ссылка
+target="_blank" открыть сслыку в новом окне
+title="" подсказка
+2)Ссылка на файл
+ <p> <a href="files/time.pdf"></p> Скачать по ссылке
+
+3)Якорные ссылки 
+ <p><a href="#header">перейти к началу статьи</a></p> перейти на верх страницы
+4)Email ссылка
+<p><a href="mailto:lerakirilova159753456@gmail.com"></a></p> ссылки на Email адресс
+
+ Таблица
+
+<table> </table> Создаем таблицу
+<tr></tr> строки (<tr><td></td></tr>)
+<th> </th> Заголовки в таблицу
+<td></td> Ячейки
+<th colspan="3"> Объединение ячейки горизонтально
+<tr><td rowspan="2"> объединение вертикально
+<table border="1">  очертание таблицы
+width ширины (<table border="1" width="750">)
+<tr align="center"> (текст в центре)
+cellpadding="10" Отступ между ячейками
+cellspacing="5"> растояние между ячейками 
+
+Оформление страницы
+<strong></strong> Выделяет текст жирным
+<em></em> Курсив
+
+ Заполнение формы заявки 
+указываем обязательно!
+<form> </form> создаем форму
+<fotm action="formdata.php" method="POST" name="form1"> 
+<fotm action="formdata.php">  обязательно,куда отправить данные
+method="POST" обязательно, каким образом будут отсылаться данные
+name="form1" обязательно указать имя
+
+То что видим указываем
+<input Ввод 
+<input type="text" name="name">
+<input type="text"> элемент для ввода текста
+name="name" имя
+ Описание формы
+<p> <label> Введите ваше имя <input type="text" name="name" size="30" maxlength="10"></label</p>
+<label> автоактивация 
+ size="30" ширина поля
+maxlength="10" ограничение символов
+
+Кнопки
+<p> <input type="radio" name="time" value="yes"></p>
+<p> <label> ДА<input type="radio" name="time" value="yes"checked></label></p>
+value="yes" какое значение получаем
+name="time" Должны дать одно имя.
+checked отмеченный( изначально включенный)
+
+Виды кнопок:(4)
+1) Отправка
+<p><input type="submit" name="submit" value="Отправить"></p> Отправка данных
+submit переводится как подтвердить, отправить 
+value="Отправить" Значение
+2) Отчистка
+<input type="reset" name="reset" value="Отчистить">
+reset Сброс
+3) кнопка ввиде картинки 
+<p><input type="image" src="images/ibutton.png" name="imageButton"></p>
+4)Просто кнопка
+<p><input type="button" value="Кнопка" name="button"></p>
+
+Чекбокс, несколь вариантов ответа( все можно щелкнуть)
+<label><input type="checkbox" name="ez"> Ежедневник</label>
+
+Вариант(своего рода список)
+<select name="sleep" size="5" multiple>
+		<option>5</option>
+		<option>6</option>
+		<option>7</option>
+		<option selected>8</option>
+		<option>8+</option>
+	</select>
+size="5" размер, но это сколько будем видеть вариантов
+multiple возможность выбрать несколько вариантов( множественный выбор)
+selected Элемент который должен быть актиыным изначально
+ Если выбрать кнопку то отрпавиться допустим 7, можно присвоить имя 
+<option value="seven">7</option>
+
+<p><label for="text">Поделитесь своими наработками по экономии времени</label</p>
+<textarea name="text" cols="50" rows="6" id="text"> текстовый текст
+</textarea>
+<textarea></textarea> текстовая область
+cols="30" Размер (сколько колонок) (ширина)
+rows="6" Ряды высота , кол.во рядов (высота)
+Автоактивация, при вопросе:
+id="text" присваиваем имя 
+<label for="text"> при щелчке на вопрос попадать на ввод
+
+Группировка нескольких элементов в один( Форма- Рамка)Блок
+<fieldset><legend>Ввод личных данных</legend>
+</fieldset>
+
+Заблокировать элемент 
+1) disabled (блокировка, нельзя использовать кнопку)<label><input type="checkbox" name="ez" disabled> Ежедневник</label>
+2)readonly (дает считывать элементы, но не даст изменить (только для чтения переводится)
+
+Обработчик
+formdata.php
+Создаем 
+<?php
+
+
+
+?>
